@@ -1,0 +1,2 @@
+# Module Inge2.voto_virtual.AppWidgetSet
+# RPC service class, partial path of RPC policy file
