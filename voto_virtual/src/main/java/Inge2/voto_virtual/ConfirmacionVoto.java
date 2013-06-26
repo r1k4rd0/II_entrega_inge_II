@@ -34,14 +34,11 @@ public class ConfirmacionVoto extends CustomComponent {
 		setCompositionRoot(mainLayout);
 
 		// TODO add user code here
-		button_1.addListener(new Button.ClickListener() {
-					
-					@Override
-					public void buttonClick(ClickEvent event) {
-						// TODO Auto-generated method stub
-						MyVaadinUI.getCurrent();
-					}
-			});
+		button_1.addClickListener(new Button.ClickListener() {
+			public void buttonClick(ClickEvent event) {
+				MyVaadinUI.getCurrent().setContent(new VentanaPrincipal());
+			}
+		});
 		
 	}
 

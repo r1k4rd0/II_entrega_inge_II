@@ -90,12 +90,12 @@ public class CrearEleccion extends CustomComponent {
 	public boolean insertarEvento(){
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		String motivo = textArea_1.getValue();
-		String f1 = sdf.format(popupDateField_1.getValue());
-		String f2 = sdf.format(popupDateField_2.getValue());
-		String f3 = sdf.format(popupDateField_3.getValue());
-		String f4 = sdf.format(popupDateField_4.getValue());
-		String f5 = sdf.format(popupDateField_5.getValue());
-		String f6 = sdf.format(popupDateField_6.getValue());
+		String f1 = popupDateField_1.getValue()!=null?sdf.format(popupDateField_1.getValue()):"";
+		String f2 = popupDateField_2.getValue()!=null?sdf.format(popupDateField_2.getValue()):"";
+		String f3 = popupDateField_3.getValue()!=null?sdf.format(popupDateField_3.getValue()):"";
+		String f4 = popupDateField_4.getValue()!=null?sdf.format(popupDateField_4.getValue()):"";
+		String f5 = popupDateField_5.getValue()!=null?sdf.format(popupDateField_5.getValue()):"";
+		String f6 = popupDateField_6.getValue()!=null?sdf.format(popupDateField_6.getValue()):"";
 		
 		String sql = "INSERT INTO eleccion(motivo,reg_tend_inicio,reg_tend_fin,requisitos_inicio,requisitos_fin"+
 		",votacion_inicio,votacion_fin) VALUES('"+motivo+"','"+f1+"','"+f2+"','"+f3+"','"+f4+"','"+f5+"','"+f6+"');";
