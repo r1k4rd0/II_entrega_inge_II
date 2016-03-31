@@ -380,7 +380,7 @@ SELECT pg_catalog.setval('padron_id_padron_seq', 3, true);
 --
 
 COPY persona (cedula, nombre, apellido1, apellido2, fecha_nacim, correo, clave, llave_publica) FROM stdin;
-113530880	Ricardo	Herrera	Vargas	1988-04-25	rahv88@gmail.com	\N	\N
+123530880	Ricardo	Suárez	Vargas	1975-04-15	ra88@gmail.com	\N	\N
 912344567	Eduardo	Steiner	Garro	1990-01-01	eduard16sg@gmail.com	\N	\N
 545614561	Rebeca	Ramírez	Arroyo	1992-05-25	rivka.ra55@gmail.com	\N	\N
 112345678	Juan	Gómez	Salas	1991-10-20	juan123@live.com	\N	\N
